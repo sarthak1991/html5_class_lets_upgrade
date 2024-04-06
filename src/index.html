@@ -1,0 +1,184 @@
+<html>
+  <!-- commit this code and give you all repo access -->
+  <head>
+    <meta name="description" content="This is a website for a bakery" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarthak Batra | Software Engineer</title>
+    <style>
+      h2 {
+        background-color: yellow;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles/styles_by_sarthak.css">
+
+  </head>
+  <script>
+    console.log("This is coming from JS");
+
+function GetLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition)
+  } else {
+    console.log("Geolocation not supported by your browser");
+  }  
+}
+
+function showPosition(position) {
+  console.log(`Lat: ${position.coords.latitude}
+  Long: ${position.coords.longitude}`);
+}
+  </script>
+  <body > 
+<!-- 
+  image
+  empty space
+  nav items = about us, contact, careers
+  call to action
+ -->
+    <nav id="flexParent1">
+      <img src="" alt="Logo" id="logo_img">
+      <div id="flexParent2">
+        <div class="navItems"></div>
+        <div class="navItems"></div>
+        <div class="navItems">About Us</div>
+        <div class="navItems">Contact</div>
+        <div class="navItems">Careers</div>
+      </div>
+      <input type="button" value="CTA" id="CTA_button_1" onclick="GetLocation()">
+      <!-- <div class="test1">Div 1</div>
+      <div class="test1">Div 2</div>
+      <div class="test1">Div 3</div>
+      <div class="test1">Div 4</div> -->
+    </nav>
+
+    <header style="background: red;">This is the header</header>
+    <h1>This will appear boldest --> h1</h1>
+    <h2>This will appear larger --> h2</h2>
+    <h3>This will appear larger --> h3</h3>
+    <h4 style="background: blue;">This will appear larger --> h4</h4>
+    <h5>This will appear larger --> h5</h5>
+    <h6>This will appear larger --> h6</h6>
+    Regular text
+    <p>
+      PLEASE BE IN A NEW LINE. Read more about it here -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"
+        >Click this text</a
+      >
+    </p>
+    <p>
+      This is my
+      <a href="https://www.twitter.com/sarthakbatra" target="_blank">twitter</a>
+    </p>
+    <figure>
+      <img
+        src="/PicForCFPs.png"
+        alt="An image of Sarthak Batra"
+        height="200"
+        width="200"
+      />
+      <figcaption>This is an image of Sarthak Batra</figcaption>
+    </figure>
+    <p>I want to teach you guys about Ordered List Unordered List</p>
+    <p>Ordered list have some sort of priority or order.</p>
+    <ol>
+      <li>Sarthak</li>
+      <li>Chetan</li>
+      <li>Chetna</li>
+    </ol>
+
+    <p>UnOrdered list have no priority or order.</p>
+    <ul>
+      <li>Aman</li>
+      <li>Rahul</li>
+      <li>Arpit</li>
+    </ul>
+    <div>Hey</div>
+    <div>I</div>
+    <div>am</div>
+    <div>Divided</div>
+    <div>I want you guys to put an image and ordered list inside this div</div>
+    <article>This is where I write my article</article>
+    <section>This is the section</section>
+
+    <form method="get" action="http://localhost:4500">
+      <!-- <label for="fname">First name:</label> -->
+      <!-- <input type="text" id="fname" name="firstname"><br><br> -->
+      <!-- <label for="lname">Last name:</label> -->
+      <!-- <input type="text" id="lname" name="lastname"><br><br> -->
+      <!-- <input type="button" value="Button"> <br> -->
+      <!-- <label for="checkbox_1">Checkbox for demo:</label>
+      <input type="checkbox" name="Checkbox123" id="checkbox_1" /> <br />
+      <label for="password_1">Password:</label>
+      <input type="password" name="password" id="password_1" /> <br />
+      <label for="email_1">Enter email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email_1"
+        placeholder="entervalid@email.com"
+      />
+      <br />
+      <label for="datetime_1">Date and time of birth:</label>
+      <input type="datetime-local" name="dateTime" id="datetime_1" /> <br />̦
+      <label for="starsign">Select your star sign</label>
+      <select name="starsign_selected" id="starsign">
+        <option value="Taurus_Sign">Taurus</option>
+        <option value="Gemini_Sign">Gemini</option>
+        <option value="Aries_Sign">Aries</option>
+        <option value="Cancer_Sign">Cancer</option>
+        <option value="Capricorn_Sign">Capricorn</option>
+      </select> -->
+
+      <br>
+
+      <input list="currencies" name="currency">
+       <datalist id="currencies">
+         <option value="United States Dollar">
+         <option value="Euro">
+         <option value="Japanese Yen">
+         <option value="Indian Rupee">
+         <option value="United Arab Emirates Dirham">
+         <option value="Philippine Peso">
+       </datalist>
+
+
+       <p>Progress 95%: <progress value="95" max="100"></progress></p>
+
+
+
+      <input type="submit" value="Submit Button" />
+    </form>
+
+    <details>
+      <summary>What is quantum gravity</summary>
+      <p>
+        Quantum gravity is the quantum theory of gravity which we haven't yet
+        discovered or reconciled general theory of relativity with quantum field
+        theory
+      </p>
+    </details>
+
+    <audio controls>
+      <source src="./assets/monster.mp4" type="audio/mp4" /> 
+    </audio>
+
+    <br>
+    <video controls height="200" width="500">
+      <source src="./assets/monster.mp4" type="video/mp4" />
+    </video>
+   
+    <br />
+
+
+
+    <aside>Aside semantic element</aside>
+    <main>main semantic element</main>
+
+    <!-- get is used to get the data -->
+    <!-- post if used to post some data -->
+    <!-- put is used to update data -->
+    <!-- delete is used to delete some data -->
+
+    <footer>This is the footer</footer>
+  </body>
+</html>
